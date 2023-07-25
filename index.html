@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!--Defer carrega o js depois que carregar toda a página-->
+  <script src="main.js" defer></script> 
+
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-png">
+
+  <title>Projeto Barbie</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span>Margot Robbie</span>
+      <span>Ryan Gosling</span>
+    </header>
+
+    <section class="phrase">
+      <h2>Ela é tudo.</h2>
+      <h2>Ele é só o Ken</h2>
+    </section>
+
+    <section class="info">
+      <div class="cine">
+        <p>20 De Julho</p>
+        <p>Somente nos cinemas</p>
+      </div>
+
+      <div class="social">
+        <i class="ph-duotone ph-facebook-logo"></i>
+
+        <i class="ph-duotone ph-instagram-logo"></i>
+
+        <i class="ph-duotone ph-twitter-logo"></i>
+
+        <i class="ph-duotone ph-tiktok-logo"></i>
+      </div>
+    </section>
+
+    <section class="buttons">
+      <button>
+        <a href="https://google.com/search?q=barbie" target="_blank">Compre seu ingresso</a>
+      </button>
+      <button>
+        <a href="#" id="openModal">Assista ao trailer</a>
+      </button>
+    </section>
+
+    <div id="modalContainer">
+      <iframe id="youtubeIframe" width="1280" height="640" src="https://www.youtube.com/embed/Ujs1Ud7k49M?controls=0" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+      <audio id="music">
+        <source src="./audio/barbie.mp3" type="audio/mpeg">
+      </audio>
+
+      <i class="ph-duotone ph-speaker-high" onclick="playAudio()"></i>
+      
+      <i id="slashAudio"  class="ph-duotone ph-speaker-simple-slash"></i>
+
+      <img src="./assets/warner-logo.svg" alt="logo da warner bros branco">
+
+      <img id="scroll" src="./assets/scroll.gif" alt="scroll-down" width="40px" height="40px">
+
+    </footer>
+  </div>  
+</body>
+</html>
